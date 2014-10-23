@@ -28,7 +28,13 @@ import os
 try:
   NombreArchivo=sys.argv[1]
   CabeceraCalibracion=sys.argv[2]
+
 except IndexError:
+  try:
+    NombreArchivoMinus=NombreArchivo.lower()
+  except NameError:
+    print "Se requieren dos argumentos: ckap [imagen] [Cabecera.dir]"
+    sys.exit()
   if NombreArchivo.lower()=="help":
     print """
     ckap V0.1 2014
@@ -44,6 +50,7 @@ except IndexError:
   else:
     print "Se requieren dos argumentos: ckap [imagen] [Cabecera.dir]"
     sys.exit()
+
 try:
   CabeceraCalibracion=sys.argv[2]
 except IndexError:
