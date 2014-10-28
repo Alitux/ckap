@@ -30,7 +30,7 @@ ckap [image.png] [header.dir]
 Use
 ===
 
-First, You must change to the image and header folder. For ex:
+First, You must change to the image and header folder. For example:
 
 cd chart-folder/
 
